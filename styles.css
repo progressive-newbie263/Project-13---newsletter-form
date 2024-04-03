@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-family: Roboto, Arial;
+  color: hsl(234, 29%, 20%);
+  background-color: hsl(235, 18%, 26%);    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.attribution {
+  width: 0;
+  color: white; 
+  font-size: 11px; 
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.attribution a { 
+  color: yellow;
+}
+
+.hidden {
+  display: none;
+}
+
+.card {
+  width: 375px;
+  height: 842px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.image {
+  width: 100%;
+  height: 284px;
+  background-image: url(assets/images/illustration-sign-up-mobile.svg);
+}
+
+
+.text {
+  padding: 0 24px 0 25px;
+}
+
+.title {
+  font-weight: 700;
+  margin-top: 38px;
+  letter-spacing: 0.76px;
+  font-size: 2.375rem;
+}
+
+.join {
+  margin-top: 21px;
+  line-height: 155.023%;
+  font-size: 1rem;
+}
+
+ul {
+  list-style-image: none;
+  margin-top: 23px;
+}
+
+.li-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.li-flex img {
+  margin-top: -10px;
+}
+
+.li-flex p {
+  margin-left: 16px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 147.687%;
+}
+
+.flex {
+  margin-top: 32px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.error-txt {
+  color: hsl(4, 100%, 67%);
+}
+
+.flex1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.email {
+  margin-top: 10px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: hsl(235, 18%, 26%) solid 1px;
+}
+
+.email-error {
+  margin-top: 10px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: hsl(4, 100%, 67%) solid 1px;
+  color: hsl(4, 100%, 67%);
+  background-color: rgb(240, 200, 200);
+}
+
+.email-error::placeholder {
+  color: hsl(4, 100%, 67%);
+}
+
+.subscribe {
+  margin-top: 35px;
+  padding: 15px 20px;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  font-family: Roboto, Arial;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.subscribe:hover {
+  background-image: linear-gradient(to left, hsl(4, 100%, 67%), hsl(4, 100%, 76%)); 
+  border: none;
+}
+
+.success {
+  width: 400px;
+  height: 800px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 150px 25px 40px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.success img {
+  width: 60px;
+  height: 60px;
+}
+
+.success h2 {
+  margin-top: 40px;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.success p {
+  line-height: 1.5;
+  font-size: 1rem;
+  margin-top: 22px;
+}
+
+#email-txt {
+  font-weight: 700;
+}
+
+.success-btn button {
+  text-align: center;
+  background-color: hsl(234, 29%, 20%);
+  padding: 15px 20px;
+  color: hsl(0, 0%, 100%);
+  font-family: Roboto, Arial;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.success-btn button:hover {
+  background-image: linear-gradient(to left, hsl(4, 100%, 67%), hsl(4, 100%, 76%));
+  border: none;
+}
+
+/*  MEDIA FOR SMALLER SCREEN/ PHONE */
+@media (min-width:961px) {
+  .card {
+    width: 900px;
+    height: 641px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 25px 25px 25px 60px;
+    border-radius: 36px;
+  }
+
+  .image {
+    width: 400px;
+    height: 593px;
+    background-image: url(assets/images/illustration-sign-up-desktop.svg);
+  }
+
+  .text {
+    padding: 0;
+    width: 376px;
+  }
+
+  .title {
+    font-weight: 700;
+    margin-top: 70px;
+    letter-spacing: 0;
+    font-size: 3.4375rem;
+  }
+
+  .join {
+    margin-top: 15px;
+    line-height: 155.023%;
+    font-size: 1rem;
+  }
+
+  ul {
+    margin-top: 21px;
+  }
+
+  .flex {
+    margin-top: 36px;
+  }
+
+  #email,
+  .subscribe {
+    width: 100%;
+  }
+
+  .success {
+    width: 504px;
+    height: 520px;
+    background-color: white;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 36px;
+  }
+
+  .success h2 {
+    font-size: 3.4375rem;
+  }
+
+  .success-btn button {
+    width: 100%;
+  }
+}
